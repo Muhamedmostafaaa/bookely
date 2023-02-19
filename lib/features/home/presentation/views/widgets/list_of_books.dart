@@ -8,7 +8,7 @@ class ListOfBooks extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(height: 250.h,width: 150.w,
+    return SizedBox(height: 250.h,width: 150.w,
       child: ListView.builder(scrollDirection:Axis.horizontal ,
         itemBuilder: (context, state) {
         return const  ListOfBooksItem();

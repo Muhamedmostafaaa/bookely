@@ -2,7 +2,7 @@ import 'package:bookely/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -72,8 +72,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
         const Duration(
           seconds: 1,
         ), (() {
-      Get.to(() => const HomeView(),
-          duration: const Duration(seconds: 1), transition: Transition.fade);
+      
+      context.go("/homeView");
     }));
   }
 }
